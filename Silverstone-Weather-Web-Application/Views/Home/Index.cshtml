@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please enter a location in the below text box to recieve weather information.</p>
+    
+    <form method="post" action="/Home/GetWeatherInfo">
+        <input type="text" name="location" />
+        <input type="submit" value="submit" />
+    </form>
+</div>

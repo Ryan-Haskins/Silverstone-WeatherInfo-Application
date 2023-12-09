@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Failed Search";
+}
+@model WeatherInfo
+
+<h1>Failed to retrieve data!</h1>
+
+<p>Error Message: @Model.ErrorMessage</p>
+
+<a class="" asp-area="" asp-controller="Home" asp-action="Index"><strong>Click this link to try again!</strong></a>

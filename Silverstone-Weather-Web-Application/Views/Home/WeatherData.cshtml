@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Weather Data";
+}
+@model WeatherInfo
+
+<h1>Weather Data</h1>
+
+<div>
+    <p>Location: @Model.Name</p>
+    <p>Current Temperature: @Model.CurrentTemp</p>
+    <p>Min Temp: @Model.MinTemp</p>
+    <p>Max Temp: @Model.MaxTemp</p>
+    <p>Humidity: @Model.Humidity</p>
+    <p>Sunset: @Model.Sunset</p>
+    <p>Sunrise: @Model.Sunrise</p>
+</div>
+
+<a class="" asp-area="" asp-controller="Home" asp-action="Index">
+    <strong>Click here to search another location!</strong>
+</a>
